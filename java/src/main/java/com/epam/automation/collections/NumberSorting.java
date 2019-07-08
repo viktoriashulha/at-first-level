@@ -3,7 +3,7 @@ package com.epam.automation.collections;
 import java.util.TreeSet;
 
 public class NumberSorting implements Comparable<NumberSorting> {
-    public  int number;
+    private int number;
 
     public NumberSorting(int number) {
         this.number = number;

@@ -20,11 +20,7 @@ public class BouquetCreator {
         Mimosa mimosa = new Mimosa();
         System.out.print("Mimosa - " + mimosa);
 
-        System.out.println("Choose action: ");
-        System.out.println("1 - Create bouquet");
-        System.out.println("2 - Sorting flowers by freshness");
-        System.out.println("3 - Find flower by length of stem");
-        System.out.println("4 - Exit");
+        printUsage();
 
         Scanner scanner = new Scanner(System.in);
         Bouquet bouquet = new Bouquet();
@@ -52,7 +48,16 @@ public class BouquetCreator {
                     return;
                 default :
                     System.out.println("Wrong action");
+                    printUsage();
             }
         }
+    }
+
+    private static void printUsage() {
+        System.out.println("Choose action: ");
+        System.out.println("1 - Create bouquet");
+        System.out.println("2 - Sorting flowers by freshness");
+        System.out.println("3 - Find flower by length of stem");
+        System.out.println("4 - Exit");
     }
 }

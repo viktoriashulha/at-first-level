@@ -9,11 +9,9 @@ public class Operators {
         int numberFromConsole = scanner.nextInt();
         System.out.print("Month - ");
         System.out.println(monthName(numberFromConsole));
-
     }
 
     public static String  monthName(int number){
-
         switch (number){
             case 1: return "January";
 
@@ -41,5 +39,4 @@ public class Operators {
 
         } return "Wrong number";
     }
-
 }

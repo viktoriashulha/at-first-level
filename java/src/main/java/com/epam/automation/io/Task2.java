@@ -13,7 +13,6 @@ public class Task2 {
         ArrayList<String> result = new ArrayList<>();
 
         try {
-
             FileInputStream stream = new FileInputStream(fileBefore);
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(stream));
             String strLine;
@@ -32,10 +31,8 @@ public class Task2 {
                     } catch (IOException e) {
                         System.out.println(e.getMessage());
                     }
-
                 }
             }
-
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }

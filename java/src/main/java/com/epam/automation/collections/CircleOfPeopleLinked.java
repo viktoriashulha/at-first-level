@@ -1,11 +1,12 @@
 package com.epam.automation.collections;
 
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Scanner;
 
 public class CircleOfPeopleLinked {
     public static void main(String[] args) {
-        LinkedList<Integer> circle = new LinkedList<>();
+        List<Integer> circle = new LinkedList<>();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number of people");
         int number = scanner.nextInt();

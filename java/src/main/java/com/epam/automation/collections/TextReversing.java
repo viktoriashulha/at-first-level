@@ -5,13 +5,14 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
 public class TextReversing {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("src\\main\\resources\\TextBeforeReverse.txt");
         Scanner scanner = new Scanner(file);
-        ArrayList<String> text = new ArrayList<>();
+        List<String> text = new ArrayList<>();
         while (scanner.hasNextLine()) {
             text.add(scanner.nextLine());
         }

@@ -1,12 +1,13 @@
 package com.epam.automation.collections;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class CircleOfPeople {
     public static void main(String[] args) {
 
-        ArrayList<Integer> circle = new ArrayList<>();
+        List<Integer> circle = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number of people");
         int numberOfPeople = scanner.nextInt();

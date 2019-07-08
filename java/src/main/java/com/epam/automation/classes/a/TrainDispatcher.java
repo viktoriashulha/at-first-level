@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TrainDispatcher {
-    List<Train> filteredTrains = new ArrayList<>();
+    private List<Train> filteredTrains = new ArrayList<>();
 
     public List<Train> getTrainsWithSameDestination(List<Train> trains, String destination){
         filteredTrains.clear();

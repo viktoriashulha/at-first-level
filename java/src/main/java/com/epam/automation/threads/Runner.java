@@ -4,14 +4,12 @@ import java.util.LinkedList;
 
 public class Runner {
     public static void main(String[] args) {
-
         LinkedList<CarPlace> carPlaceList = new LinkedList<>();
         carPlaceList.add(new CarPlace(1));
         carPlaceList.add(new CarPlace(2));
         carPlaceList.add(new CarPlace(3));
 
         startThread(carPlaceList);
-
     }
 
     public static void startThread(LinkedList<CarPlace> carPlaceList){

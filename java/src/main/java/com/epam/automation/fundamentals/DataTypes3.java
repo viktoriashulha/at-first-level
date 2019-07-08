@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class DataTypes3 {
     public static void main(String[] args) {
-        Scanner scn = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your name: ");
-        String name = scn.nextLine();
+        String name = scanner.nextLine();
         System.out.println("Welcome," + name +"!");
     }
 }

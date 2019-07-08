@@ -9,7 +9,6 @@ public class Car extends Thread {
     }
 
     public void run() {
-
         CarPlace carPlace = null;
         try {
             carPlace = (CarPlace) parking.getResource(100);
@@ -20,7 +19,6 @@ public class Car extends Thread {
             System.out.println("Car № " + this.getId() + " stopped waiting" + e.getMessage());
         } finally {
             if (carPlace != null) {
-
                 System.out.println("Car № " + this.getId() + " left place №" + carPlace.getNumberOfCarPlace());
                 parking.returnResource(carPlace);
             }

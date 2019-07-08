@@ -2,11 +2,12 @@ package com.epam.automation.classes.b;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 
 public  class Bouquet{
 
-    private ArrayList<Flower> flowers = new ArrayList<>();
-    private ArrayList<Accessory> accessories = new ArrayList<>();
+    private List<Flower> flowers = new ArrayList<>();
+    private List<Accessory> accessories = new ArrayList<>();
 
     public void fillBouquet(int rose, int iris, int mimosa, boolean wrapper, boolean ribbon){
         for (int i = 0; i < rose; i++) {
@@ -39,7 +40,7 @@ public  class Bouquet{
         return bouqet;
     }
 
-    public ArrayList getFlowers() {
+    public List getFlowers() {
         return flowers;
     }
 
@@ -54,7 +55,7 @@ public  class Bouquet{
         return price;
     }
 
-    public ArrayList sortFlowers() {
+    public List sortFlowers() {
         for (int i = flowers.size() - 1; i >= 0; i--) {
             for (int j = 0; j < i; j++) {
                 if (flowers.get(j).getFreshness() > flowers.get(j + 1).getFreshness()) {

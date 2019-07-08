@@ -1,17 +1,17 @@
 package com.epam.automation.fundamentals;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class DataTypes2 {
 
     public static void main(String[] args) {
-
-        ArrayList<Integer> arrayList = getArrayFromInt(2112);
+        List<Integer> arrayList = getArrayFromInt(2112);
         System.out.println(isPalindrome(arrayList));
     }
 
-    public static ArrayList<Integer> getArrayFromInt(int number) {
-        ArrayList arrayList = new ArrayList();
+    public static List<Integer> getArrayFromInt(int number) {
+        List arrayList = new ArrayList();
         while (number >= 10) {
             arrayList.add(number % 10);
             number = number / 10;
@@ -21,7 +21,7 @@ public class DataTypes2 {
         return arrayList;
     }
 
-    public static boolean isPalindrome(ArrayList<Integer> arrayList) {
+    public static boolean isPalindrome(List<Integer> arrayList) {
         int size = arrayList.size();
         for (int i = 0; i < size; i++) {
             if (!(arrayList.get(i) == arrayList.get(size - i - 1))) {

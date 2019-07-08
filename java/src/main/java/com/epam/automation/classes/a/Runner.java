@@ -66,12 +66,7 @@ public class Runner {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("Choose action: ");
-            System.out.println("1 - Filter destination");
-            System.out.println("2 - Filter seats");
-            System.out.println("3 - Filter date");
-            System.out.println("4 - Print all trains");
-            System.out.println("5 - Exit");
+            printUsage();
 
             int command = scanner.nextInt();
             switch (command) {
@@ -99,14 +94,24 @@ public class Runner {
                     break;
                 default:
                     System.out.println("Wrong command");
+                    printUsage();
             }
         }
     }
 
+    private void printUsage() {
+        System.out.println("Choose action: ");
+        System.out.println("1 - Filter destination");
+        System.out.println("2 - Filter seats");
+        System.out.println("3 - Filter date");
+        System.out.println("4 - Print all trains");
+        System.out.println("5 - Exit");
+    }
+
     public void chooseDestinationFromConsole(){
         System.out.println("Write destination");
-        Scanner scanner1 = new Scanner(System.in);
-        destination = scanner1.nextLine();
+        Scanner scanner = new Scanner(System.in);
+        destination = scanner.nextLine();
     }
 
     public void printTrains(List<Train> trains) {

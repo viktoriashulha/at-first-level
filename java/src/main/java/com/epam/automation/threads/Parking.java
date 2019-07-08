@@ -23,7 +23,7 @@ public class Parking<T> {
         } catch (InterruptedException e) {
             throw new ResourceException(e);
         }
-        throw new ResourceException(": превышено время ожидания");
+        throw new ResourceException("timeout exceeded");
     }
 
     public void returnResource(T resource) {
