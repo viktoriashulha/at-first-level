@@ -44,7 +44,7 @@ public class AirportTest {
                 break;
             }
         }
-        Assert.assertEquals(isTransportMilitaryPlane, true);
+        Assert.assertTrue(isTransportMilitaryPlane);
     }
 
     @Test

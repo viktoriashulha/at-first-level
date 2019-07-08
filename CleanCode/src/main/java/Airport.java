@@ -10,6 +10,10 @@ public class Airport {
 
     private List<? extends Plane> planes;
 
+    public Airport(List<? extends Plane> planes) {
+        this.planes = planes;
+    }
+
 
     public List<PassengerPlane> getPassengerPlane() {
         List<PassengerPlane> passengerPlanes = new ArrayList<>();
@@ -80,7 +84,7 @@ public class Airport {
     public Airport sortByMaxDistance() {
         Collections.sort(planes, new Comparator<Plane>() {
             public int compare(Plane o1, Plane o2) {
-                return o1.GetMaxFlightDistance() - o2.GetMaxFlightDistance();
+                return o1.getMaxFlightDistance() - o2.getMaxFlightDistance();
             }
         });
         return this;
@@ -123,10 +127,4 @@ public class Airport {
                 "planes=" + planes.toString() +
                 '}';
     }
-
-
-    public Airport(List<? extends Plane> planes) {
-        this.planes = planes;
-    }
-
 }

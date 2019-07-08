@@ -10,15 +10,13 @@ import java.util.concurrent.TimeUnit;
 
 public class PastebinTests {
 
-    WebDriver driver;
+    private WebDriver driver;
 
     @Before
     public  void openChrome() {
-
         driver = new ChromeDriver();
         driver.manage().window().fullscreen();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
     }
 
     @After

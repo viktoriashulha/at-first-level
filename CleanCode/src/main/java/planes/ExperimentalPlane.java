@@ -34,8 +34,10 @@ public class ExperimentalPlane extends Plane{
 
     @Override
     public String toString() {
-        return "ExperimentalPlane{" +
-                "model='" + model + '\'' +
-                '}';
+        final StringBuffer sb = new StringBuffer("ExperimentalPlane{");
+        sb.append("experimentalTypes=").append(experimentalTypes);
+        sb.append(", classificationLevel=").append(classificationLevel);
+        sb.append('}');
+        return sb.toString();
     }
 }

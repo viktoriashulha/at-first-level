@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 
 public class GoogleCloudTests {
-    WebDriver driver;
+    private WebDriver driver;
 
     @Before
     public void openChrome() {
@@ -18,7 +18,6 @@ public class GoogleCloudTests {
         driver = new ChromeDriver();
         driver.manage().window().fullscreen();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
     }
 
     @After
@@ -35,8 +34,6 @@ public class GoogleCloudTests {
                 .createEstimate();
         Calculator actualCalculator = googleCloud.readEstimate();
         Assert.assertEquals(expectedCalculator, actualCalculator);
-
-
     }
 
     @Test
@@ -50,7 +47,5 @@ public class GoogleCloudTests {
 
         Calculator actualCalculator = googleCloud.readEmailEstimate();
         Assert.assertEquals(expectedCalculator, actualCalculator);
-
     }
-
 }

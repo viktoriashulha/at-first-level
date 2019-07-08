@@ -1,13 +1,13 @@
 package model;
 
 public class Calculator {
-    public String VMClass;
-    public String instanceType;
-    public String region;
-    public String localSSD;
-    public String commitmentTerm;
-    public String email;
-    public String cost;
+    private String VMClass;
+    private String instanceType;
+    private String region;
+    private String localSSD;
+    private String commitmentTerm;
+    private String email;
+    private String cost;
 
 
     @Override
